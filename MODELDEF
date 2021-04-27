@@ -1,0 +1,13 @@
+model "BulletProj"
+{
+   DontCullBackfaces
+   PitchFromMomentum
+
+   Scale 16.0 1.0 32.0
+
+   Path "models"
+   Model 0 "Tracer.obj"
+   Skin 0 "tracer.png"
+
+   FrameIndex BULL A 0 0
+}

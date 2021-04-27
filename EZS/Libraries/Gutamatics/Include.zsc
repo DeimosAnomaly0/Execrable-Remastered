@@ -1,0 +1,5 @@
+#include "EZS/Libraries/Gutamatics/GlobalMaths.zsc"
+#include "EZS/Libraries/Gutamatics/Matrix.zsc"
+#include "EZS/Libraries/Gutamatics/Matrix4.zsc"
+#include "EZS/Libraries/Gutamatics/Quaternion.zsc"
+#include "EZS/Libraries/Gutamatics/VectorUtil.zsc"
