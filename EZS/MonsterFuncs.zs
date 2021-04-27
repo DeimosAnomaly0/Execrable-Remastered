@@ -1,11 +1,5 @@
 Extend Class ER_Actor
 {
-    Protected void PreDie()
-    {
-        A_Scream();
-        A_NoBlocking();
-    }
-
     void PlayPrepSound()
     {
         A_StartSound(prepsound);
@@ -23,5 +17,19 @@ Extend Class ER_Actor
         vector2 R = Vec2angle(dospeed,angle-90);
 
         Trymove(R,BDROPOFF);
+    }
+
+    void moveB(double dospeed)
+    {
+        vector2 B = Vec2angle(dospeed,angle-180);
+
+        Trymove(B,BDROPOFF);
+    }
+
+    void moveF(double dospeed)
+    {
+        vector2 F = Vec2angle(dospeed,angle);
+
+        Trymove(F,BDROPOFF);
     }
 }

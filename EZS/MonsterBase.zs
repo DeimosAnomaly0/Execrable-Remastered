@@ -8,7 +8,7 @@ Class ER_Actor : Actor abstract
     sound prepsound;
 
     property prepsound : prepsound;
-    default;
+    default
     {
         MONSTER;
         +FLOORCLIP
@@ -20,4 +20,9 @@ Class ER_Actor : Actor abstract
         Super.Die(source, inflictor, dmgflags, MeansOfDeath);
     }
 
+    void PreDie()
+    {
+        A_Scream();
+        A_NoBlocking();
+    }
 }

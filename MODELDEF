@@ -1,4 +1,4 @@
-model "BulletProj"
+model "BulletProjectile"
 {
    DontCullBackfaces
    PitchFromMomentum
